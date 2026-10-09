@@ -3,98 +3,164 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Frangin Frangine, boulangerie-pâtisserie et snacking à Saint-Bonnet-en-Champsaur. Du pain frais, des douceurs et des sandwichs du lundi au samedi.">
-  <meta name="theme-color" content="#2647ff">
-  <title>Frangin Frangine — Boulangerie & snacking à Saint-Bonnet</title>
+  <meta name="description" content="Frangin Frangine, boulangerie artisanale, pâtisserie et snacking à Saint-Bonnet-en-Champsaur. Ouvert du lundi au samedi.">
+  <meta name="theme-color" content="#1e2021">
+  <title>Frangin Frangine — Boulangerie artisanale à Saint-Bonnet</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/frangin-facebook.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="wipe" aria-hidden="true"><span>F</span><span>&</span><span>F</span></div>
-  <div class="grain" aria-hidden="true"></div>
-  <header>
-    <a class="logo" href="#top" aria-label="Frangin Frangine, accueil"><span>FRANGIN</span><i>&</i><span>FRANGINE</span></a>
-    <nav aria-label="Navigation principale"><a href="#maison">La maison</a><a href="#comptoir">Le comptoir</a><a href="#venir">Venir</a></nav>
-    <a class="call magnetic" href="tel:+33492234808">04 92 23 48 08 <span>↗</span></a>
+  <div class="loader" aria-hidden="true">
+    <div class="loader-logo brand-image"></div>
+    <p>Le fournil s’éveille</p>
+    <span></span>
+  </div>
+  <canvas id="flour" aria-hidden="true"></canvas>
+  <div class="texture" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <a class="brand-image header-logo" href="#top" aria-label="Frangin Frangine, retour en haut"></a>
+    <nav aria-label="Navigation principale">
+      <a href="#maison">La maison</a>
+      <a href="#savoir-faire">Savoir-faire</a>
+      <a href="#comptoir">Au comptoir</a>
+      <a href="#venir">Venir</a>
+    </nav>
+    <a class="header-call magnetic" href="tel:+33492234808"><span>Appeler</span><i>↗</i></a>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-half brother" data-word="FRANGIN">
-        <p class="eyebrow reveal">Boulangerie · Pâtisserie</p>
-        <h1><span>FRAN</span><span>GIN</span></h1>
-        <div class="bread-object" aria-hidden="true"><div class="loaf"><i></i><i></i><i></i><i></i></div><div class="shadow"></div></div>
-        <p class="hero-caption reveal">Le pain frais.<br>Chaque matin.</p>
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Saint-Bonnet-en-Champsaur · Depuis 6 h</p>
+        <h1>
+          <span class="reveal">Boulangerie</span>
+          <em class="reveal">artisanale</em>
+        </h1>
+        <p class="hero-intro reveal">Du pain au quotidien, des vitrines bien garnies et une maison locale ouverte du premier café au retour du travail.</p>
+        <div class="hero-actions reveal">
+          <a class="dark-button magnetic" href="tel:+33492234808">Commander par téléphone <span>↗</span></a>
+          <a class="underlink" href="#maison">Découvrir la maison ↓</a>
+        </div>
+        <div class="hero-facts reveal">
+          <span><b>6 h</b> Ouverture</span>
+          <span><b>6 j/7</b> Du lundi au samedi</span>
+          <span><b>05</b> Hautes-Alpes</span>
+        </div>
       </div>
-      <div class="hero-half sister" data-word="FRANGINE">
-        <p class="eyebrow reveal">Saint-Bonnet · Champsaur</p>
-        <h1><span>FRAN</span><span>GINE</span></h1>
-        <figure class="hero-image"><img src="assets/croissants.jpg" alt="Croissants tout juste préparés"></figure>
-        <p class="hero-caption reveal">Le salé. Le sucré.<br>Et le goûter.</p>
+
+      <div class="hero-visual">
+        <figure class="shop-photo" data-parallax="12">
+          <img src="assets/frangin-facebook.png" alt="Boutique Frangin Frangine avec son enseigne et ses vitrines de boulangerie">
+        </figure>
+        <div class="logo-card reveal">
+          <div class="brand-image actual-logo" role="img" aria-label="Logo Frangin Frangine photographié sur l’enseigne de la boutique"></div>
+          <small>Identité originale de la maison</small>
+        </div>
+        <div class="material-tag reveal"><i></i><span>Bois brut<br>Métal noir<br>Farine blanche</span></div>
       </div>
-      <div class="ampersand" aria-hidden="true">&</div>
-      <a class="scroll" href="#maison">ENTREZ <span>↓</span></a>
+      <a class="hero-scroll" href="#maison" aria-label="Faire défiler"><span>Défiler</span><i></i></a>
     </section>
 
-    <div class="conveyor" aria-label="Pain, viennoiseries, pâtisserie, snacking">
-      <div class="conveyor-track"><span>PAIN</span><i>●</i><span>VIENNOISERIES</span><i>●</i><span>PÂTISSERIE</span><i>●</i><span>SNACKING</span><i>●</i><span>PAIN</span><i>●</i><span>VIENNOISERIES</span><i>●</i><span>PÂTISSERIE</span><i>●</i><span>SNACKING</span><i>●</i></div>
+    <div class="marquee" aria-label="Pain, viennoiseries, pâtisserie, snacking">
+      <div class="marquee-track">
+        <span>PAIN DU JOUR</span><i>✦</i><span>VIENNOISERIES</span><i>✦</i><span>PÂTISSERIE</span><i>✦</i><span>SNACKING</span><i>✦</i>
+        <span>PAIN DU JOUR</span><i>✦</i><span>VIENNOISERIES</span><i>✦</i><span>PÂTISSERIE</span><i>✦</i><span>SNACKING</span><i>✦</i>
+      </div>
     </div>
 
     <section class="house" id="maison">
+      <div class="section-index reveal"><span>01</span><p>La maison</p></div>
       <div class="house-copy">
-        <p class="label reveal">01 / La maison</p>
-        <h2 class="reveal">Deux mots.<br>Une même<br><span>faim.</span></h2>
-        <p class="reveal">Frangin Frangine accompagne les journées de Saint-Bonnet-en-Champsaur du premier café au dernier pain : boulangerie, pâtisserie et sandwichs à retrouver dans la zone du Moulin.</p>
+        <p class="display-copy reveal">Un fournil<br><em>bien ancré.</em></p>
+        <div class="house-text reveal">
+          <p>Frangin Frangine accueille Saint-Bonnet-en-Champsaur dans une boutique claire où le bois brut rencontre les lignes noires des vitrines.</p>
+          <p>Une adresse de proximité pour le pain, les viennoiseries, les pâtisseries et les pauses salées de la journée.</p>
+        </div>
       </div>
-      <figure class="shop-shot reveal"><img src="assets/shop.jpg" alt="Intérieur de la boulangerie Frangin Frangine à Saint-Bonnet"><figcaption><span>La boutique</span><b>Saint-Bonnet-en-Champsaur</b></figcaption></figure>
-      <div class="round-stamp" aria-hidden="true">TOUS LES JOURS*<br>DU BON PAIN<br><small>*SAUF DIMANCHE</small></div>
+      <div class="material-grid" aria-label="L’univers de la boutique">
+        <figure class="material-photo first reveal"><img src="assets/shop.jpg" alt="Comptoir et vitrines de la boulangerie Frangin Frangine"><figcaption>La boutique réelle</figcaption></figure>
+        <div class="osb-card reveal"><span>F&amp;F</span><p>Une esthétique simple : matières brutes, gestes précis.</p></div>
+        <figure class="material-photo second reveal"><img src="assets/bread.jpg" alt="Pains farinés à la croûte dorée"><figcaption>Chaque fournée compte</figcaption></figure>
+      </div>
     </section>
 
-    <section class="timeline">
-      <div class="timeline-heading reveal"><p class="label">02 / Une journée chez F&F</p><h2>Du matin<br><em>au goûter.</em></h2></div>
-      <div class="time-list">
-        <article class="time-card reveal"><span class="hour">06:00</span><div class="time-visual"><img src="assets/bread.jpg" alt="Pains artisanaux farinés"></div><div><h3>Ça commence par le pain.</h3><p>La boutique ouvre tôt du lundi au samedi pour les premiers pains et les premiers cafés de la journée.</p></div></article>
-        <article class="time-card reverse reveal"><span class="hour">12:00</span><div class="time-visual"><img src="assets/baguettes.jpg" alt="Pain tranché pour le déjeuner"></div><div><h3>La pause prend forme.</h3><p>Sandwichs et offre salée pour une pause simple, rapide et généreuse.</p></div></article>
-        <article class="time-card reveal"><span class="hour">16:00</span><div class="time-visual"><img src="assets/pastry.jpg" alt="Assortiment de pains et douceurs boulangères"></div><div><h3>Le retour du sucré.</h3><p>Viennoiseries, pâtisseries et gourmandises disponibles selon la production du jour.</p></div></article>
+    <section class="craft" id="savoir-faire">
+      <div class="craft-title">
+        <div class="section-index reveal"><span>02</span><p>Savoir-faire</p></div>
+        <h2 class="reveal">Le geste.<br><em>La matière.</em><br>Le temps.</h2>
+      </div>
+      <div class="craft-rail">
+        <article class="craft-step reveal"><span>01 / Pétrir</span><div class="line-drawing dough" aria-hidden="true"><i></i><i></i><i></i></div><h3>Donner corps</h3><p>La base de chaque fournée, avant que le jour ne commence.</p></article>
+        <article class="craft-step reveal"><span>02 / Façonner</span><div class="line-drawing scoring" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>Signer la pâte</h3><p>Des gestes répétés pour obtenir une forme régulière et une belle cuisson.</p></article>
+        <article class="craft-step reveal"><span>03 / Cuire</span><div class="line-drawing heat" aria-hidden="true"><i></i><i></i><i></i></div><h3>Laisser dorer</h3><p>Le moment où la croûte prend sa couleur et où la boutique se parfume.</p></article>
       </div>
     </section>
 
     <section class="counter" id="comptoir">
-      <div class="counter-top"><p class="label reveal">03 / Derrière le comptoir</p><h2 class="reveal">Les essentiels,<br><span>bien alignés.</span></h2></div>
-      <div class="product-grid">
-        <button class="product blue active reveal" data-product="pain" type="button"><span>01</span><div class="product-shape bread-shape" aria-hidden="true"><i></i><i></i><i></i></div><h3>Le pain</h3><p>Chaque jour</p></button>
-        <button class="product pink reveal" data-product="sweet" type="button"><span>02</span><div class="product-shape croissant-shape" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>Le sucré</h3><p>Selon production</p></button>
-        <button class="product yellow reveal" data-product="snack" type="button"><span>03</span><div class="product-shape sandwich-shape" aria-hidden="true"><i></i></div><h3>Le snack</h3><p>Pour midi</p></button>
+      <div class="counter-heading">
+        <div class="section-index reveal"><span>03</span><p>Au comptoir</p></div>
+        <h2 class="reveal">À chaque heure,<br><em>sa vitrine.</em></h2>
       </div>
-      <div class="product-detail" aria-live="polite">
-        <span>EN CE MOMENT</span>
-        <p id="product-copy">Pains, baguettes et spécialités boulangères disponibles selon la fournée.</p>
-        <small>La sélection exacte varie chaque jour. Appelez la boutique pour une commande particulière.</small>
+      <div class="product-stage">
+        <div class="product-tabs" role="tablist" aria-label="Produits de la boulangerie">
+          <button class="active" data-target="bread" role="tab" aria-selected="true">Le pain <span>01</span></button>
+          <button data-target="morning" role="tab" aria-selected="false">Le matin <span>02</span></button>
+          <button data-target="lunch" role="tab" aria-selected="false">À midi <span>03</span></button>
+        </div>
+        <div class="product-scenes">
+          <article class="product-scene active" data-scene="bread">
+            <figure><img src="assets/pastry.jpg" alt="Assortiment de pains boulangers"></figure>
+            <div><span>Le quotidien</span><h3>Pains &amp; baguettes</h3><p>La sélection varie avec la production et les fournées du jour.</p></div>
+          </article>
+          <article class="product-scene" data-scene="morning">
+            <figure><img src="assets/croissants.jpg" alt="Croissants dorés saupoudrés de farine"></figure>
+            <div><span>Le matin</span><h3>Viennoiseries</h3><p>Pour accompagner le premier café ou repartir avec le petit-déjeuner.</p></div>
+          </article>
+          <article class="product-scene" data-scene="lunch">
+            <figure><img src="assets/baguettes.jpg" alt="Pain tranché pour une pause déjeuner"></figure>
+            <div><span>La pause</span><h3>Snacking</h3><p>Sandwichs et propositions salées disponibles selon le comptoir.</p></div>
+          </article>
+        </div>
       </div>
+      <p class="availability reveal">Les produits exacts évoluent selon la production. Pour une commande ou une demande particulière, appelez directement la boutique.</p>
     </section>
 
-    <section class="numbers">
-      <div class="number-block reveal"><span>6</span><p>jours par semaine</p></div>
-      <div class="number-block flip reveal"><span>6<span>h</span></span><p>la boutique s’éveille</p></div>
-      <div class="number-block reveal"><span>19<span>h30</span></span><p>jusqu’au dernier passage</p></div>
+    <section class="quote-section">
+      <div class="quote-photo"><img src="assets/frangin-facebook.png" alt="Vitrines et espace de production de Frangin Frangine"></div>
+      <blockquote class="reveal"><span>“</span>Le pain comme<br>un repère quotidien.</blockquote>
+      <div class="floating-hours reveal"><span>Lun — Sam</span><strong>6:00<br>19:30</strong><small>Horaires affichés en boutique</small></div>
     </section>
 
     <section class="visit" id="venir">
-      <div class="visit-copy reveal"><p class="label">04 / Passez nous voir</p><h2>Votre pain<br>n’est pas loin.</h2><p>Centre commercial Carrefour Market<br>Zone artisanale du Moulin<br>05500 Saint-Bonnet-en-Champsaur</p><div class="visit-actions"><a class="primary magnetic" href="https://www.google.com/maps/search/?api=1&query=Frangin+Frangine+Saint+Bonnet+Champsaur" target="_blank" rel="noopener">Itinéraire ↗</a><a href="tel:+33492234808">Appeler ↗</a></div></div>
-      <div class="opening reveal"><span>HORAIRES ANNONCÉS</span><div class="opening-row"><b>Lun — Sam</b><strong>06:00 — 19:30</strong></div><div class="opening-row muted"><b>Dimanche</b><strong>Fermé</strong></div><p>Horaires à confirmer auprès de la boutique, notamment les jours fériés.</p></div>
+      <div class="visit-title reveal">
+        <div class="section-index"><span>04</span><p>Venir</p></div>
+        <h2>La boutique<br>vous attend.</h2>
+      </div>
+      <div class="visit-grid">
+        <article class="visit-card reveal"><span>Adresse</span><h3>Zone artisanale<br>du Moulin</h3><p>Centre commercial Carrefour Market<br>05500 Saint-Bonnet-en-Champsaur</p><a href="https://www.google.com/maps/search/?api=1&query=Frangin+Frangine+Saint+Bonnet+Champsaur" target="_blank" rel="noopener">Ouvrir l’itinéraire ↗</a></article>
+        <article class="visit-card reveal"><span>Horaires affichés</span><div class="schedule"><p><b>Lundi — Samedi</b><i>6 h — 19 h 30</i></p><p class="closed"><b>Dimanche</b><i>Fermé</i></p></div><small>À confirmer les jours fériés.</small></article>
+        <article class="visit-card phone-card reveal"><span>Téléphone</span><h3>04 92 23<br>48 08</h3><a class="magnetic" href="tel:+33492234808">Appeler la boutique ↗</a></article>
+      </div>
     </section>
 
-    <section class="finale">
-      <div class="finale-word" aria-hidden="true"><span>FRANGIN</span><span>FRANGINE</span></div>
-      <h2>On vous garde<br><em>une place ?</em></h2>
-      <a class="magnetic" href="tel:+33492234808">04 92 23 48 08 <span>↗</span></a>
+    <section class="closing">
+      <div class="closing-logo brand-image" role="img" aria-label="Logo Frangin Frangine"></div>
+      <p>Le fournil du quotidien.</p>
+      <a class="magnetic" href="tel:+33492234808">Commander <span>↗</span></a>
     </section>
   </main>
 
-  <footer><a class="logo" href="#top"><span>FRANGIN</span><i>&</i><span>FRANGINE</span></a><p>Boulangerie · Pâtisserie · Snacking</p><p class="legal">Maquette indépendante — produits et horaires à confirmer.</p><a href="#top">Retour en haut ↑</a></footer>
+  <footer>
+    <div class="brand-image footer-logo" role="img" aria-label="Logo Frangin Frangine"></div>
+    <p>Boulangerie artisanale · Pâtisserie · Snacking</p>
+    <p class="legal">Maquette indépendante — informations et produits à confirmer auprès de la boutique.</p>
+    <a href="#top">Retour en haut ↑</a>
+  </footer>
   <script src="app.js"></script>
 </body>
 </html>

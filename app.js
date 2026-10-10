@@ -1,5 +1,18 @@
 document.body.classList.add('loading');
 
+const mobileToggle = document.querySelector('.mobile-toggle');
+const primaryNav = document.querySelector('.site-header nav');
+mobileToggle?.addEventListener('click', () => {
+  const open = primaryNav.classList.toggle('open');
+  mobileToggle.setAttribute('aria-expanded', String(open));
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+primaryNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+  primaryNav.classList.remove('open');
+  mobileToggle?.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}));
+
 window.addEventListener('load', () => window.setTimeout(() => {
   document.querySelector('.loader')?.classList.add('done');
   document.body.classList.remove('loading');

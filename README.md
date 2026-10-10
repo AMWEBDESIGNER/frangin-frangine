@@ -2,6 +2,10 @@
 
 Maquette indépendante pour **Frangin Frangine**, boulangerie-pâtisserie et point de snacking situé dans la zone artisanale du Moulin à Saint-Bonnet-en-Champsaur.
 
+## Vérification et statut
+
+Établissement recoupé comme actif dans les sources publiques consultées (fiche touristique Champsaur & Valgaudemar, annuaire professionnel et fiche locale). Les horaires, produits, tarifs et jours fériés doivent être confirmés par l’équipe avant mise en ligne officielle. Le site est une réalisation indépendante, non présentée comme le site officiel.
+
 ## Liens
 
 - Site Cloudflare Pages : [frangin-frangine.pages.dev](https://frangin-frangine.pages.dev)
@@ -24,4 +28,4 @@ Site statique HTML, CSS et JavaScript, sans compilation. Le contenu se modifie d
 
 Pour toute évolution, conserver le logo existant de l’établissement. Ne produire une nouvelle identité graphique qu’après confirmation explicite qu’aucun logo officiel ou historique n’existe.
 
-Les produits exacts, tarifs et horaires doivent être confirmés par la boulangerie avant utilisation officielle.
+Les produits exacts, tarifs, horaires, droit d’utilisation des photographies et éventuels liens de commande doivent être confirmés par la boulangerie avant utilisation officielle. Les pages `la-maison.html`, `produits.html`, `snacking.html`, `infos-pratiques.html` et `contact.html` constituent le parcours complet ; `pages.css` et `pages.js` portent les composants partagés.

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://frangin-frangine.pages.dev/sitemap.xml

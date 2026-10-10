@@ -29,3 +29,7 @@ Site statique HTML, CSS et JavaScript, sans compilation. Le contenu se modifie d
 Pour toute évolution, conserver le logo existant de l’établissement. Ne produire une nouvelle identité graphique qu’après confirmation explicite qu’aucun logo officiel ou historique n’existe.
 
 Les produits exacts, tarifs, horaires, droit d’utilisation des photographies et éventuels liens de commande doivent être confirmés par la boulangerie avant utilisation officielle. Les pages `la-maison.html`, `produits.html`, `snacking.html`, `infos-pratiques.html` et `contact.html` constituent le parcours complet ; `pages.css` et `pages.js` portent les composants partagés.
+
+## Motion design et provenance du code
+
+Animations réalisées en CSS vanilla, avec respect de `prefers-reduced-motion`, et une révélation progressive inspirée du pattern public [Scroll animation: IntersectionObserver and CSS](https://codepen.io/oscar-jite/pen/qBzwOVq). La logique reste locale, légère et adaptée à l’identité de chaque établissement ; aucune dépendance payante ni contenu généré n’est requis.
